@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<openerp>
+  <data>
+    <record id="technical_guide_id" model="ir.actions.report.xml">
+      <field name="name">Guia tecnica</field>
+      <field name="type">ir.actions.report.xml</field>
+      <field name="model">ir.model</field>
+      <field name="report_name">technical_guide</field>
+      <field name="report_type">aeroo</field>
+      <field name="in_format">oo-odt</field>
+      <field name="parser_loc">technical_report/technical_guide.py</field>
+      <field name="tml_source">file</field>
+      <field name="report_rml">technical_report/technical_guide1.odt</field>
+      <field name="parser_state">loc</field>
+    </record>
+  </data>
+</openerp>
+
