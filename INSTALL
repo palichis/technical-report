@@ -1,0 +1,18 @@
+Cuando inicie en el mundo de openerp, me encontré con una serie de inconvenientes al tratar de enlazar módulos propios del openerp, ya que no sabia los nombres de los campos, el tipo de relaciones que tenía con otros objetos, etc, y creo que todos los que se están iniciando en este mundo tienen el mismo problema, es por eso que he creado un módulo guiándome en "base_module_doc_rst", la diferencia esta en que mi módulo saca información por objeto, los campos que usa cada vista dentro del objeto, imprimiedo la información en un odt.
+
+El formulario esta hecho para funcionar con report_aeroo, para lo cual debemos descargar dicho modulo desde <a href="http:solid-ec.org/oerp/aero.tar.bz2">aqui</a>
+
+Lo primero que se debe hacer para la instalación del módulo report_aerooo es instalar la librería aeroolib, que esta en el archivo comprimido descargable en la parte superior, para lo cual descomprimimos con:
+<code>
+tar xzfv aerolib.tar.gz
+cd aerolib
+python setup.py install
+</code>
+
+Con esto tendremos instalado la librería requerida para el módulo report_aeroo, este modulo lo instalamos en openerp normalmente como cualquier otro, y listo.
+
+Ahora nos descargamos el modulo technical_report, que es el que he creado desde
+git@github.com:palichis/technical-report.git
+y lo instalamos en openerp como un módulo más, y listo podemos ver la información referente a un objeto desde..
+administración -> personalización -> estructura de la base de datos -> objetos
+en esta ventana hacemos doble clikc sobre e objeto a analizar, y en la parte derecha hacemos click sobre guia tecnica para generar nuestro reporte
